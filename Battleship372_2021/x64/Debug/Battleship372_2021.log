@@ -1,0 +1,3 @@
+﻿  Interface.cpp
+C:\Users\revlt\source\repos\Battleship372_2021\Battleship372_2021\Interface.cpp(33,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Battleship372_2021.vcxproj -> C:\Users\revlt\source\repos\Battleship372_2021\x64\Debug\Battleship372_2021.exe
