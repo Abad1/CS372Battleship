@@ -1,8 +1,10 @@
+//Interface.cpp
+
 #include "Interface.h"
 
-void Interface::addBoard(BoardState _board[BOARD_SIZE][BOARD_SIZE], int P)
+void Interface::addBoard(BoardState _board[BOARD_SIZE][BOARD_SIZE], int PlayerNum)
 {
-	if (P == 1)
+	if (PlayerNum == 1)
 	{
 		_boardp1[BOARD_SIZE][BOARD_SIZE] = _board[BOARD_SIZE][BOARD_SIZE];
 	}

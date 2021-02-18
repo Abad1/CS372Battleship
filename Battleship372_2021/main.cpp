@@ -1,9 +1,16 @@
+//main.cpp
+
+
+
 #include "Interface.h"
+#include "Placer.h"
 
 int main()
 {
     Interface Battleship;
-    Battleship.addState(1, 1, true, true, 2);
+    Placer(Battleship, 1);
+    Placer(Battleship, 2);
+    system("CLS");
     Battleship.print(1);
     return 0;
 }

@@ -1,3 +1,4 @@
+//Settings.h
 
 #define BOARD_SIZE 10
 #define SHIP_TOTAL 5

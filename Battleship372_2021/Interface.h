@@ -1,3 +1,5 @@
+//Interface.h
+
 #include "board.h"
 #include <iostream>
 #include <string>
@@ -9,8 +11,11 @@ using std::endl;
 class Interface
 {
 public:
-	void addBoard(BoardState _board[BOARD_SIZE][BOARD_SIZE], int P);
+	//
+	void addBoard(BoardState _board[BOARD_SIZE][BOARD_SIZE], int PlayerNum);
+
 	void print(int player);
+
 	void addState(int x, int y, bool ship, bool hit, int player) {
 		if (player == 1)
 		{
