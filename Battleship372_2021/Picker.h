@@ -17,13 +17,13 @@ void Picker(Interface &board,int PlayerNum, int & remainingBoats) {
 	cin >> xcoord;
 	cout << "Choose Y coordinate to hit:";
 	cin >> ycoord;
-	if (board.checkForBoat(xcoord - 1, ycoord - 1, PlayerNum)) {
+	if (board.checkForBoat(xcoord, ycoord - 1, PlayerNum)) {
 		cout << "Hit!";
-		board.addState(xcoord - 1, ycoord - 1, true, true, PlayerNum);
+		board.addState(xcoord, ycoord, true, true, PlayerNum);
 		remainingBoats--;
 	}
 	else {
 		cout << "Miss!";
-		board.addState(xcoord - 1, ycoord - 1, false, true, PlayerNum);
+		board.addState(xcoord, ycoord, false, true, PlayerNum);
 	}
 }

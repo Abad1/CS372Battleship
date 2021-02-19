@@ -18,7 +18,7 @@ int main()
         Battleship.print(1);
         //ask user to pick a location on the board
         Picker(Battleship, 1, remainingBoats);
-        
+        Picker(Battleship, 2, remainingBoats);
         system("CLS");
     }
     return 0;

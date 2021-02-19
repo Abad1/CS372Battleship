@@ -20,22 +20,22 @@ public:
 	void addState(int x, int y, bool ship, bool hit, int player) {
 		if (player == 1)
 		{
-			_boardp1[x][y].hit = hit;
-			_boardp1[x][y].ship = ship;
+			_boardp1[x - 1][y - 1].hit = hit;
+			_boardp1[x - 1][y - 1].ship = ship;
 		}
 		else
 		{
-			_boardp2[x][y].hit = hit;
-			_boardp2[x][y].ship = ship;
+			_boardp2[x - 1][y - 1].hit = hit;
+			_boardp2[x - 1][y - 1].ship = ship;
 		}
 	}
 
 	bool checkForBoat(int xcoord, int ycoord, int PlayerNum){
 		if (PlayerNum == 1) {
-			return _boardp1[BOARD_SIZE][BOARD_SIZE].ship;
+			return _boardp1[xcoord - 1][ycoord - 1].ship;
 		}
 		else {
-			return _boardp2[BOARD_SIZE][BOARD_SIZE].ship;
+			return _boardp2[xcoord - 1][ycoord - 1].ship;
 		}
 	
 	};
