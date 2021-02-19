@@ -28,31 +28,31 @@ void Placer(Interface &board, int PlayerNum) {
 		switch (i) {
 		case (0):
 			for (int j = 0; j < SHIP_1_SIZE; j++) {
-				board.addState(xcoord, ycoord + j, true, false, PlayerNum);
+				board.addState(xcoord - 1, ycoord + j - 1, true, false, PlayerNum);
 			}
 			break;
 		case(1):
 			for (int j = 0; j < SHIP_2_SIZE; j++) {
-				board.addState(xcoord, ycoord + j, true, false, PlayerNum);
+				board.addState(xcoord - 1, ycoord + j - 1, true, false, PlayerNum);
 			}
 			break;
 		case(2):
 			for (int j = 0; j < SHIP_3_SIZE; j++) {
-				board.addState(xcoord, ycoord + j, true, false, PlayerNum);
+				board.addState(xcoord - 1, ycoord + j - 1, true, false, PlayerNum);
 			}
 			break;
 		case(3):
 			for (int j = 0; j < SHIP_4_SIZE; j++) {
-				board.addState(xcoord, ycoord + j, true, false, PlayerNum);
+				board.addState(xcoord - 1, ycoord + j - 1, true, false, PlayerNum);
 			}
 			break;
 		case(4):
 			for (int j = 0; j < SHIP_5_SIZE; j++) {
-				board.addState(xcoord, ycoord+j, true, false, PlayerNum);
+				board.addState(xcoord - 1, ycoord+j - 1, true, false, PlayerNum);
 			}
 			break;
 		default:
-			board.addState(xcoord, ycoord, true, false, PlayerNum);
+			board.addState(xcoord - 1, ycoord - 1, true, false, PlayerNum);
 			break;
 		}
 		system("CLS");

@@ -6,6 +6,7 @@
 
 using std::cout;
 using std::endl;
+using std::string;
 #pragma once
 
 class Interface
@@ -28,6 +29,17 @@ public:
 			_boardp2[x][y].ship = ship;
 		}
 	}
+
+	bool checkForBoat(int xcoord, int ycoord, int PlayerNum){
+		if (PlayerNum == 1) {
+			return _boardp1[BOARD_SIZE][BOARD_SIZE].ship;
+		}
+		else {
+			return _boardp2[BOARD_SIZE][BOARD_SIZE].ship;
+		}
+	
+	};
+	
 private:
 	BoardState _boardp1[BOARD_SIZE][BOARD_SIZE];
 	BoardState _boardp2[BOARD_SIZE][BOARD_SIZE];
